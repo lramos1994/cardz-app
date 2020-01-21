@@ -2,7 +2,7 @@
   <nav class="navbar is-light">
     <div class="container">
       <div class="navbar-brand">
-        <nuxt-link class="navbar-item" to="/">Nuxt Auth</nuxt-link>
+        <nuxt-link class="navbar-item" to="/">Cardz</nuxt-link>
         <button class="button navbar-burger">
           <span></span>
           <span></span>

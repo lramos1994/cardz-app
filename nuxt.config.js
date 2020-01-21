@@ -10,10 +10,6 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css'}
     ]
   },
   /*
@@ -24,12 +20,17 @@ module.exports = {
   ** Global CSS
   */
   css: [
-
+    '~assets/styles/main.scss'
   ],
+
+  styleResources: {
+    scss: '~assets/styles/common/_variables.scss'
+  },
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/buefy.js',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -40,6 +41,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/style-resources',
     '@nuxtjs/auth',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
