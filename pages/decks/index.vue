@@ -15,19 +15,19 @@
             <thead>
               <tr>
                 <th><abbr title="Position">Name</abbr></th>
-                <th class="has-text-centered">Options</th>
+                <th class="has-text-right">Options</th>
               </tr>
             </thead>
             <tfoot>
               <tr>
                 <th><abbr title="Position">Name</abbr></th>
-                <th class="has-text-centered">Options</th>
+                <th class="has-text-right">Options</th>
               </tr>
             </tfoot>
             <tbody>
               <tr v-for="deck in decks" v-bind:key="deck.id">
                 <td>{{ deck.name }}</td>
-                <td class="has-text-centered">
+                <td class="has-text-right">
                   <nuxt-link :to="'/decks/'+deck.id">
                     <span class="icon has-text-success">
                       <i class="fas fa-check-square"></i>
