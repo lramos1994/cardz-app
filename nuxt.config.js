@@ -66,6 +66,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      config.resolve.alias['vue'] = 'vue/dist/vue.common';
     }
   },
   axios: {

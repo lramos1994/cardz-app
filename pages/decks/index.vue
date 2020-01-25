@@ -5,7 +5,7 @@
         <div class="column is-half">
           <div class="columns is-vcentered">
             <div class="column is-3">
-              <h1 class="title is-1 ">Decks</h1>
+              <h1 class="title is-1">Decks</h1>
             </div>
             <div class="column has-text-right">
               <b-button @click="create">Add New</b-button>
