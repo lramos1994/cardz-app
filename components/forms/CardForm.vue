@@ -66,10 +66,10 @@ export default {
          card
         ]).then((response) => {
           this.$emit('change', {
-              card: card,
-              created: response.status == 201,
-              message: 'Carta Adicionada com sucesso!',
-            });
+            cards: response.data.cards,
+            created: response.status == 201,
+            message: 'Carta Adicionada com sucesso!',
+          });
         });
       } catch (e) {
         //TODO tratar retorno de erro da api

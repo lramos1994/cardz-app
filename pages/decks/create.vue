@@ -26,6 +26,43 @@
               <b-button @click="isComponentModalActive = true" >Add New</b-button>
             </div>
           </div>
+          <ul >
+            <li class="box" v-for="card in cards" v-bind:key="card.id">
+              <article class="media">
+                <figure class="media-left">
+                  <p class="image is-64x64">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </p>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>{{ card.name }}</strong>
+                    </p>
+                  </div>
+                  <nav class="level is-mobile">
+                    <div class="level-left">
+                      <a class="level-item">
+                        {{ card.attack }}
+                        <span class="icon"><i class="fas fa-fist-raised"></i></span>
+                      </a>
+                      <a class="level-item">
+                        {{ card.defense }}
+                        <span class="icon"><i class="fas fa-shield-alt"></i></span>
+                      </a>
+                      <a class="level-item">
+                        {{ card.life }}
+                        <span class="icon"><i class="fas fa-heart"></i></span>
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+                <div class="media-right">
+                  <button class="delete"></button>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -65,6 +102,7 @@ export default {
       try {
         await this.$axios.post(`deck`, {
           name: this.name,
+          cards: this.cards,
         }).then(response => (
           console.log(response)
         ));
@@ -77,8 +115,8 @@ export default {
     cardFormChange(data) {
       if(data.created) {
         this.isComponentModalActive = false;
-        this.formProps = data.card;
-        this.error = data.message;
+        this.cards = [...this.cards, ...data.cards];
+        console.log(this.cards);
       } else {
         this.error = 'Erro ao Criar Carta.';
       }
