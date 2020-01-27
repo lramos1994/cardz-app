@@ -9,7 +9,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
     ]
   },
   /*
@@ -30,7 +30,6 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/buefy.js',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -46,7 +45,12 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    'nuxt-fontawesome',
+    ['nuxt-buefy', {
+      defaultIconPack: 'fas',
+      materialDesignIconsHRef: "https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    }],
   ],
   /*
   ** Axios module configuration
@@ -62,14 +66,19 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      config.resolve.alias['vue'] = 'vue/dist/vue.common';
     }
   },
-
   axios: {
     baseURL: 'http://cardz.local/api'
   },
-
   auth: {
+    redirect: {
+      login: '/login',
+      logout: '/login',
+      callback: '/login',
+      home: '/'
+    },
     strategies: {
       local: {
         endpoints: {

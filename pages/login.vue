@@ -74,7 +74,6 @@ export default {
 
         this.$router.push('/')
       } catch (e) {
-        console.log(e);
         this.error = e.response.data.message
       }
     }
