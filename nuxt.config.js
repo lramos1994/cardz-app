@@ -73,6 +73,12 @@ module.exports = {
     baseURL: 'http://cardz.local/api'
   },
   auth: {
+    redirect: {
+      login: '/login',
+      logout: '/login',
+      callback: '/login',
+      home: '/'
+    },
     strategies: {
       local: {
         endpoints: {
