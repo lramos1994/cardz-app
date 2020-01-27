@@ -12,6 +12,7 @@
       <div class="navbar-menu">
         <div class="navbar-start">
           <nuxt-link class="navbar-item" to="/decks">Decks</nuxt-link>
+          <nuxt-link class="navbar-item" to="/cards">Cards</nuxt-link>
         </div>
         <div class="navbar-end">
           <div class="navbar-item has-dropdown is-hoverable" v-if="isAuthenticated">
@@ -38,7 +39,7 @@ import { mapGetters } from 'vuex'
 export default {
   methods: {
     async logout() {
-      await this.$auth.logout();
+      console.log(await this.$auth.logout());
     },
   },
   computed: {

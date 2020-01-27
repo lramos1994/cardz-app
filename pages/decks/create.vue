@@ -79,6 +79,7 @@ import Notification from '~/components/Notification';
 import CardForm from '~/components/forms/CardForm';
 
 export default {
+  middleware: 'auth',
   components: {
     Notification,
     CardForm

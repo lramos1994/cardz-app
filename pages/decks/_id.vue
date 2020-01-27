@@ -58,7 +58,7 @@
                   </nav>
                 </div>
                 <div class="media-right">
-                  <button class="delete"></button>
+                  <button @click="removeCard(card)" class="delete"></button>
                 </div>
               </article>
             </li>
@@ -78,6 +78,7 @@ import Notification from '~/components/Notification';
 import CardForm from '~/components/forms/CardForm';
 
 export default {
+  middleware: 'auth',
   components: {
     Notification,
     CardForm
@@ -129,6 +130,10 @@ export default {
         this.error = 'Erro ao Criar Carta.';
       }
     },
+    removeCard(item) {
+      let i = this.cards.map(item => item.id).indexOf(item.id) // find index of your object
+      this.cards.splice(i, 1) // remove it from array
+    }
   }
 }
 </script>

@@ -5,7 +5,7 @@
         <div class="column is-half">
           <div class="columns is-vcentered">
             <div class="column is-3">
-              <h1 class="title is-1">Decks</h1>
+              <h1 class="title is-1">cards</h1>
             </div>
             <div class="column has-text-right">
               <b-button @click="create">Add New</b-button>
@@ -15,23 +15,29 @@
             <thead>
               <tr>
                 <th><abbr title="Name">Name</abbr></th>
-                <th class="has-text-centered"><abbr title="Cards">Cards</abbr></th>
+                <th class="has-text-centered"><abbr title="Attack">Attack</abbr></th>
+                <th class="has-text-centered"><abbr title="Defense">Defense</abbr></th>
+                <th class="has-text-centered"><abbr title="Life">Life</abbr></th>
                 <th class="has-text-right">Options</th>
               </tr>
             </thead>
             <tfoot>
               <tr>
                 <th><abbr title="Name">Name</abbr></th>
-                <th class="has-text-centered"><abbr title="Cards">Cards</abbr></th>
+                <th class="has-text-centered"><abbr title="Attack">Attack</abbr></th>
+                <th class="has-text-centered"><abbr title="Defense">Defense</abbr></th>
+                <th class="has-text-centered"><abbr title="Life">Life</abbr></th>
                 <th class="has-text-right">Options</th>
               </tr>
             </tfoot>
             <tbody>
-              <tr v-for="deck in decks" v-bind:key="deck.id">
-                <td>{{ deck.name }}</td>
-                <td class="has-text-centered">{{ deck.cards.length }}</td>
+              <tr v-for="card in cards" v-bind:key="card.id">
+                <td>{{ card.name }}</td>
+                <td class="has-text-centered">{{ card.attack }}</td>
+                <td class="has-text-centered">{{ card.defense }}</td>
+                <td class="has-text-centered">{{ card.life }}</td>
                 <td class="has-text-right">
-                  <nuxt-link :to="'/decks/'+deck.id">
+                  <nuxt-link :to="'/cards/'+card.id">
                     <span class="icon has-text-success">
                       <i class="fas fa-check-square"></i>
                     </span>
@@ -57,17 +63,17 @@ export default {
   middleware: 'auth',
   data() {
     return {
-      decks: null
+      cards: null
     }
   },
   mounted () {
     this.$axios
-      .get('deck')
-      .then(response => (this.decks = response.data))
+      .get('card')
+      .then(response => (this.cards = response.data))
   },
   methods: {
     create() {
-      this.$router.push('/decks/create')
+      this.$router.push('/cards/create')
     }
   }
 }
