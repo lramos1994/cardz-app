@@ -1,8 +1,14 @@
 @import "~bulma/sass/utilities/_all";
 
-$primary : #7579FF;
-$secondary : #537ca3;
-$primary-invert: findColorInvert($primary);
+$manatee: #8d99aeff;
+$mellow-apricot: #ffc482ff;
+$radical-red: #f05365ff;
+$charcoal: #373f51ff;
+$space-cadet: #2a2e45ff;
+
+$mellow-apricot: #7579FF;
+$secondary : $charcoal;
+$primary-invert: $space-cadet;
 $colors: (
     "white": ($white, $black),
     "black": ($black, $white),
@@ -14,3 +20,19 @@ $colors: (
     "warning": ($warning, $warning-invert),
     "danger": ($danger, $danger-invert),
 );
+
+
+/* SCSS HEX */
+
+
+/* SCSS Gradient */
+// $gradient-top: linear-gradient(0deg, #8d99aeff, #ffc482ff, #f05365ff, #373f51ff, #2a2e45ff);
+// $gradient-right: linear-gradient(90deg, #8d99aeff, #ffc482ff, #f05365ff, #373f51ff, #2a2e45ff);
+// $gradient-bottom: linear-gradient(180deg, #8d99aeff, #ffc482ff, #f05365ff, #373f51ff, #2a2e45ff);
+// $gradient-left: linear-gradient(270deg, #8d99aeff, #ffc482ff, #f05365ff, #373f51ff, #2a2e45ff);
+// $gradient-top-right: linear-gradient(45deg, #8d99aeff, #ffc482ff, #f05365ff, #373f51ff, #2a2e45ff);
+// $gradient-bottom-right: linear-gradient(135deg, #8d99aeff, #ffc482ff, #f05365ff, #373f51ff, #2a2e45ff);
+// $gradient-top-left: linear-gradient(225deg, #8d99aeff, #ffc482ff, #f05365ff, #373f51ff, #2a2e45ff);
+// $gradient-bottom-left: linear-gradient(315deg, #8d99aeff, #ffc482ff, #f05365ff, #373f51ff, #2a2e45ff);
+// $gradient-radial: radial-gradient(#8d99aeff, #ffc482ff, #f05365ff, #373f51ff, #2a2e45ff);
+
