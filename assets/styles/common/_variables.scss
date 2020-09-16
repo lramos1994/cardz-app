@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/_all";
+@import "../../../node_modules/bulma/sass/base/helpers.sass";
 
 $manatee: #8d99aeff;
 $mellow-apricot: #ffc482ff;
@@ -6,7 +7,7 @@ $radical-red: #f05365ff;
 $charcoal: #373f51ff;
 $space-cadet: #2a2e45ff;
 
-$mellow-apricot: #7579FF;
+
 $secondary : $charcoal;
 $primary-invert: $space-cadet;
 $colors: (

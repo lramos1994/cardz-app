@@ -1,5 +1,17 @@
 .board {
-  background: $space-cadet;
-  height: 100vh;
+  background: $charcoal;
   width: 100%;
+
+  .left-field,
+  .right-field {
+    height: 100vh;
+  }
+
+  .right-field {
+    border-left: 1px solid rgba($space-cadet, 0.9);
+  }
+
+  .left-field {
+    box-shadow: inset -5px 0px 5px -1px $space-cadet;
+  }
 }
