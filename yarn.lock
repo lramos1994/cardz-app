@@ -1378,9 +1378,9 @@ ajv-keywords@^3.1.0, ajv-keywords@^3.4.1:
   integrity sha512-RO1ibKvd27e6FEShVFfPALuHI3WjSVNeK5FIsmme/LYRNxjKuNj+Dt7bucLa6NdSv3JcVTyMlm9kGR84z1XpaQ==
 
 ajv@^6.1.0, ajv@^6.10.2, ajv@^6.5.5:
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.11.0.tgz#c3607cbc8ae392d8a5a536f25b21f8e5f3f87fe9"
-  integrity sha512-nCprB/0syFYy9fVYU1ox1l2KN8S9I+tziH8D4zdZuLT3N6RMlGSGt5FSTpAiHB/Whv8Qs1cWHma1aMKZyaHRKA==
+  version "6.12.6"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
+  integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
   dependencies:
     fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
@@ -1890,13 +1890,6 @@ browserslist@^4.0.0, browserslist@^4.6.4, browserslist@^4.8.2, browserslist@^4.8
     electron-to-chromium "^1.3.322"
     node-releases "^1.1.44"
 
-buefy@^0.8.10:
-  version "0.8.10"
-  resolved "https://registry.yarnpkg.com/buefy/-/buefy-0.8.10.tgz#e00a9e9ced4babcf01ada300c451fafced2a2b42"
-  integrity sha512-Lw/UP3Ku7o+oqam9TIoRMG5SrytGQwXWAoxAtqt6Wb9eSsMEqp/5o+jZnz8oteR06YWgjdSIfOv2YeEdjEkQCg==
-  dependencies:
-    bulma "0.7.5"
-
 buffer-from@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
@@ -1925,11 +1918,6 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
-
-bulma@0.7.5:
-  version "0.7.5"
-  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.5.tgz#35066c37f82c088b68f94450be758fc00a967208"
-  integrity sha512-cX98TIn0I6sKba/DhW0FBjtaDpxTelU166pf7ICXpCCuplHWyu6C9LYZmL5PEsnePIeJaiorsTEzzNk3Tsm1hw==
 
 bulma@^0.9.0:
   version "0.9.0"
@@ -3383,9 +3371,9 @@ extsprintf@^1.2.0:
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
 fast-deep-equal@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.1.tgz#545145077c501491e33b15ec408c294376e94ae4"
-  integrity sha512-8UEa58QDLauDNfpbrX55Q9jrGHThw2ZMdOky5Gl1CDtVeJDPVrG4Jxx1N8jw2gkWaff5UUuX1KJd+9zGe2B+ZA==
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
+  integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
 fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
@@ -5389,13 +5377,6 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
-
-nuxt-buefy@^0.3.21:
-  version "0.3.21"
-  resolved "https://registry.yarnpkg.com/nuxt-buefy/-/nuxt-buefy-0.3.21.tgz#c46b9de05470912371c04a9fe402da1a75ab191c"
-  integrity sha512-Vjl2npGWGISyewGrXsTeKpFWAOievI8D+Tt0tC2Yx0FQB3xOrEW8uGkdDkEzNKTbvM/1jkjA3wv2X+YhClv2yA==
-  dependencies:
-    buefy "^0.8.10"
 
 nuxt-fontawesome@^0.4.0:
   version "0.4.0"
@@ -8004,9 +7985,9 @@ upper-case@^1.1.1:
   integrity sha1-9rRQHC7EzdJrp4vnIilh3ndiFZg=
 
 uri-js@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.2.2.tgz#94c540e1ff772956e2299507c010aea6c8838eb0"
-  integrity sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.4.1.tgz#9b1a52595225859e55f669d928f88c6c57f2a77e"
+  integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
 
